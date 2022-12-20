@@ -10,7 +10,7 @@ dunst &
 MONITOR1=eDP1
 if xrandr -q | grep -q "^DP[0-9] connected*"; then
   $HOME/.screenlayout/dell_with_benq_pd.sh;
-  MONITOR2=DP3
+  MONITOR2=DP1
   bspc monitor $MONITOR2 -d 1 2 3 4 5 
   bspc config -m $MONITOR2 top_padding 20
   bspc config -m $MONITOR2 bottom_padding 20
