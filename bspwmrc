@@ -33,7 +33,9 @@ bspc rule -a Zathura state=tiled
 bspc rule -a Emacs state=tiled 
 bspc rule -a obs desktop='^8'
 bspc rule -a 'VirtualBox Manager' desktop='^9'
-bspc rule -a 'VirtualBox Machine' desktop='^10'
+bspc rule -a 'VirtualBox Machine' desktop='^9'
+bspc rule -a Pavucontrol desktop='^10'
+bspc rule -a easyeffects desktop='^10'
 
 # Autostart programs
 $HOME/.local/scripts/autostart.sh
