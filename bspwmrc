@@ -3,7 +3,9 @@
 # Autostart for bspwm
 killall -q sxhkd
 sxhkd &
+killall -q picom
 picom --experimental-backends &
+killall -q dunst
 dunst &
 
 # Monitor setup
@@ -30,10 +32,7 @@ bspc config border_width         3
 bspc config window_gap           20
 bspc config focused_border_color "#689d6a"
 
-bspc config split_ratio        0.52
-bspc config borderless_monocle true
-bspc config gapless_monocle    true
-bspc config split_ratio          0.52
+bspc config split_ratio          0.5
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
@@ -41,7 +40,9 @@ bspc rule -a Zathura state=tiled
 bspc rule -a Emacs state=tiled 
 bspc rule -a obs desktop='^8'
 bspc rule -a 'VirtualBox Manager' desktop='^9'
-bspc rule -a 'VirtualBox Machine' desktop='^10'
+bspc rule -a 'VirtualBox Machine' desktop='^9'
+bspc rule -a Pavucontrol desktop='^10'
+bspc rule -a easyeffects desktop='^10'
 
 # Autostart programs
 $HOME/.local/scripts/autostart.sh
