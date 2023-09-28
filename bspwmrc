@@ -41,3 +41,7 @@ bspc rule -a easyeffects desktop='^10'
 
 # Autostart programs
 $HOME/.local/scripts/autostart.sh
+
+# Execute golden-ratio plugin
+#[ -f ~/Documents/GithubProjects/golden/run.sh ] &&
+#  exec ~/Documents/GithubProjects/golden/run.sh &
